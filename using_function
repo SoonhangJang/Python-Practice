@@ -1,0 +1,34 @@
+def is_on_list(days, a):                ## is_on_list function
+    if a in days:                       ## Boolean Condition
+        return True
+    else:
+        return False
+
+
+def get_x(days, num):                   ## gey_x function
+    return days[num]                    ## using Index
+
+
+def add_x(days, b):                     ## add_x function
+    return days.append(b)               ## using append method
+
+
+def remove_x(days, c):                  ## remove_x function
+    return days.remove(c)               ## using remove method
+
+
+# \/\/\/\/\/\/\  DO NOT TOUCH AREA  \/\/\/\/\/\/\ #
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+print("Is Wed on 'days' list?", is_on_list(days, "Wed"))
+
+print("The fourth item in 'days' is:", get_x(days, 3))
+
+add_x(days, "Sat")
+print(days)
+
+remove_x(days, "Mon")
+print(days)
+
+# /\/\/\/\/\/\/\ END DO NOT TOUCH AREA /\/\/\/\/\/\/\ #
